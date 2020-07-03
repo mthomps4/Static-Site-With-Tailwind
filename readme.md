@@ -27,3 +27,11 @@ So you actually want to deploy this thing...
 ### That's it
 That is it folks... Drop in some static HTML, link `index.css`, and have fun.
 
+### Hosting with [Vercel](vercel.com)
+Linking the Repo and Settings
+![Linking the Repo](./screenshots/with_vercel.PNG)
+
+Preview of Deploy
+![Vercel deploy preview](./screenshots/preview.PNG)
+
+Done!
