@@ -6,7 +6,7 @@
   "scripts": {
     "build:all": "yarn build:pages && yarn compile:css:prod",
     "build:pages": "rm -rf build && mkdir -p build && cp -r ./src/*.html ./build/",
-    "serve:prod": "yarn build && yarn serve build",
+    "serve:build": "yarn build:all && yarn serve build",
     "serve:dev": "yarn serve src",
     "compile:css:prod": "NODE_ENV=production npx tailwindcss build ./src/app.css -o ./build/index.css",
     "compile:css:dev": "npx tailwindcss build ./src/app.css -o ./src/index.css",
@@ -26,6 +26,7 @@
     "postcss-cli": "^7.1.1",
     "postcss-import": "^12.0.1",
     "serve": "^11.3.2",
+    "@tailwindcss/ui": "^0.3.1",
     "tailwindcss": "^1.4.6",
     "watch": "^1.0.2"
   }
